@@ -1,2 +1,0 @@
-<?php
-//datetime ve timezones
