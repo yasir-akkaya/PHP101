@@ -1,0 +1,3 @@
+01-06-2024, Description 4, -60
+02-06-2024, Description 5, -50
+03-06-2024, Description 6, 70
