@@ -7,6 +7,8 @@ $BudgetDatas = array();
 $income = 0;
 $expense = 0;
 
+
+// Verilerin toplanacağı text dosyalarını okur ve arrray'e atar
 while (file_exists("Budget_" . $file_path_counter . ".txt")) {
     $fileName = "Budget_" . $file_path_counter . ".txt";
     $file = fopen($fileName, "r");
@@ -17,7 +19,7 @@ while (file_exists("Budget_" . $file_path_counter . ".txt")) {
     $file_path_counter++;
 }
 
-// array zamana göre sırala
+// tarihe göre sıralar
 usort($BudgetDatas, fn($a, $b) => strtotime($a[0]) <=> strtotime($b[0]));
 
 
@@ -28,6 +30,7 @@ echo "<pre>";
 
 $lineNumber = count($BudgetDatas);
 
+//HTML
 
 echo "<h1>Budget</h1>";
 
